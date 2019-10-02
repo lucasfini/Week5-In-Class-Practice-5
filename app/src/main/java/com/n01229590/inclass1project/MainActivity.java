@@ -9,9 +9,10 @@ import android.widget.Button;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-
+//Splash screen added
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        setTheme(R.style.AppTheme);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         final Button button = findViewById(R.id.button1);
@@ -21,7 +22,6 @@ public class MainActivity extends AppCompatActivity {
                CharSequence text = "Hello, this is my first Andriod APP";
                int duration = Toast.LENGTH_LONG;
                Toast.makeText(context, text, duration).show();
-
 
             }
         });
